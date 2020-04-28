@@ -6,13 +6,14 @@ import WelcomePage from './components/WelcomePage';
 import CharList from './components/CharList';
 
 
+
 function App() {
   return (
     <div className="App">
       <main>
-        <CharList />
-        {/* <Header />
-        <Route exact path='/' component={WelcomePage} /> */}
+        <Header />
+        <Route exact path='/' component={WelcomePage} />
+        <Route path='/characters' component={CharList} />
       </main>
     </div>
   );
