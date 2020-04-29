@@ -1,8 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
+
+import logo from '../logo.png';
+
+
+
 export default function Header() {
     return (
         <header>
-            <h1>Rick & Morty Fan Page</h1>
+            <img src={logo} />
+            <h1>Fan Page</h1>
         </header>
     )
 }
