@@ -28,9 +28,6 @@ export default function CharList() {
 
     return (
         <section>
-            <Link to={'/'}>
-                Home
-            </Link>
             <SearchForm search={search} chars={chars} />
             {filteredData.map(char => {
                 return <CharCard key={char.id} character={char} />
