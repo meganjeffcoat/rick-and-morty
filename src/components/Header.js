@@ -1,38 +1,46 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import logo from '../logo.png';
+import logo from "../logo.png";
+import Navigation from "./Navigation";
 
 const Section = styled.section`
-    background-color: #2b343e;
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
+  background-color: #2b343e;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    img{
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 2%;
-    }
+  img {
+    width: 20%;
 
-    h1 {
-        font-size: 2.5em;
-        color: #5AADC9;
-        margin-left: 38%;
-        margin-top: -1%;
-    }
+  }
+
+  h1 {
+    font-size: 2.5em;
+    color: #5aadc9;
+    margin-left: 1.5%;
+  }
 `;
 
 const Title = styled.div`
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 1.5%;
 `;
 
 export default function Header() {
-    return (
-        <Section>
-            <img src={logo} />
-            <h1>Fan Page</h1>
-        </Section>
-    )
+  return (
+    <Section>
+      <Title>
+        {" "}
+        <img src={logo} />
+        <h1>Fan Page</h1>
+      </Title>
+
+      <Navigation />
+    </Section>
+  );
 }
