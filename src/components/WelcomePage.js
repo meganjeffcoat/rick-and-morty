@@ -10,7 +10,7 @@ const Welcome = styled.section`
   justify-content: center;
 
   h1 {
-    color: #5AADC9;
+    color: #A5F975;
     margin-left: 30%;
     font-size: 2.5em;
   }

@@ -25,7 +25,7 @@ export default function SearchForm(props) {
             type="text"
             name="character"
             id="character"
-            placeholder="Search"
+            placeholder="Search Your Favorite"
           />
           <button type='submit'>Search</button>
         </form>
